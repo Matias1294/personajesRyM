@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Permanent Marker', Arial, sans-serif;
+}
+
+#contenedor {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#listaPersonajes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.personaje-item {
+    background-color: #efefef;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: 'Permanent Marker', Arial, sans-serif;
+}
+
+.personaje-item img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.personaje-item .informacion {
+    flex: 1;
+}
+
+.personaje-item .boton-eliminar {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Permanent Marker', Arial, sans-serif;
+}
+
+.personaje-item .boton-eliminar:hover {
+    background-color: #ff1c33;
+}
+
+.seleccionado {
+    background-color: lightblue !important;
+}
